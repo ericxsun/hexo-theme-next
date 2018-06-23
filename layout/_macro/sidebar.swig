@@ -30,9 +30,11 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             {% if theme.avatar.url %}
-              <img class="site-author-image" itemprop="image"
-                src="{{ url_for( theme.avatar.url | default(theme.images + '/avatar.gif') ) }}"
-                alt="{{ author }}" />
+              <a href="/" class="site-author-image" rel="start" style="border:none">
+                <img class="site-author-image" itemprop="image"
+                  src="{{ url_for( theme.avatar.url | default(theme.images + '/avatar.gif') ) }}"
+                  alt="{{ author }}" />
+              </a>
             {% endif %}
               <p class="site-author-name" itemprop="name">{{ author }}</p>
               <p class="site-description motion-element" itemprop="description">{#
@@ -144,15 +146,14 @@
                   </li>
                 {% endfor %}
               </ul>
+              {% if theme.custom_file_path.sidebar %}
+              {% set custom_sidebar = '../../../../' + theme.custom_file_path.sidebar %}
+              {% else %}
+              {% set custom_sidebar = '../_custom/sidebar.swig' %}
+              {% endif %}
+              {% include custom_sidebar %}
             </div>
           {% endif %}
-
-          {% if theme.custom_file_path.sidebar %}
-            {% set custom_sidebar = '../../../../' + theme.custom_file_path.sidebar %}
-          {% else %}
-            {% set custom_sidebar = '../_custom/sidebar.swig' %}
-          {% endif %}
-          {% include custom_sidebar %}
         </div>
       </section>
 
