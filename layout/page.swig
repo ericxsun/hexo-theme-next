@@ -30,6 +30,7 @@
         {# tagcloud page support #}
         {% if page.type === "tags" %}
           <div class="tag-cloud">
+            <!--
             <div class="tag-cloud-title">
                 {% set visibleTags = 0 %}
                 {% for tag in site.tags %}
@@ -39,12 +40,14 @@
                 {% endfor %}
                 {{ _p('counter.tag_cloud', visibleTags) }}
             </div>
+            -->
             <div class="tag-cloud-tags">
               {{ tagcloud({min_font: 13, max_font: 31, amount: 1000, color: true, start_color: '#9733EE', end_color: '#FF512F'}) }}
             </div>
           </div>
         {% elif page.type === 'categories' %}
           <div class="category-all-page">
+            <!--
             <div class="category-all-title">
                 {% set visibleCategories = 0 %}
                 {% for cat in site.categories %}
@@ -54,6 +57,7 @@
                 {% endfor %}
                 {{ _p('counter.categories', visibleCategories) }}
             </div>
+            -->
             <div class="category-all">
               {{ list_categories() }}
             </div>
