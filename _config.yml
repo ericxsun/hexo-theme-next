@@ -187,6 +187,9 @@ links_icon: globe
 links_title: 有点儿意思
 links_layout: inline
 links:
+  "Sebastian Ruder": http://ruder.io/#open
+  "立委NLP频道": https://liweinlp.com/
+  "科学空间": https://kexue.fm/content.html
   知乎技术日志: https://zhuanlan.zhihu.com/hackers
   美团技术团队: https://www.zhihu.com/org/mei-tuan-dian-ping-ji-shu-tuan-dui/activities
 
