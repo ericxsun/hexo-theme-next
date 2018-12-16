@@ -485,9 +485,9 @@ pangu: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
-  count: true
+  enable: true
+  shortname: ericxsunio
+  count: false
   lazyload: false
 
 # changyan
