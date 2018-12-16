@@ -1,4 +1,5 @@
 {% if theme.google_analytics %}
+<!-- Global Site Tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ theme.google_analytics }}"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
