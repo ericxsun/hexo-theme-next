@@ -187,6 +187,7 @@ links_icon: globe
 links_title: 有点儿意思
 links_layout: inline
 links:
+  "Ehud Reiter(NLG)": https://ehudreiter.com/
   "Sebastian Ruder": http://ruder.io/#open
   "立委NLP频道": https://liweinlp.com/
   "科学空间": https://kexue.fm/content.html
